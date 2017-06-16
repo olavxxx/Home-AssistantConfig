@@ -1,0 +1,19 @@
+- action:
+  - alias: watching_tv
+    service: scene.turn_on_tv_lights
+  alias: Watching TV
+  id: '1497180219777'
+  trigger:
+  - entity_id: media_player.lgwebostv
+    from: idle
+    platform: state
+    to: playing
+- action:
+  - alias: not_watching_tv
+    service: scene.tv_lights_max
+  alias: TV Off
+  id: '1497182997810'
+  trigger:
+  - entity_id: media_player.lgwebostv
+    platform: state
+    to: 'off'

@@ -1,0 +1,87 @@
+#group:
+  default_view:
+    view: yes
+    icon: mdi:home 
+    entities:
+      - group.hjem
+      - group.lys
+      - group.brytere
+      - group.kjkken
+      - group.stue
+      - group.bad
+      - group.soverom
+      - group.balkong
+      - group.gjesteromlys
+  hjem:
+    name: Hjem
+    entities:
+    - sensor.yr_symbol
+    - sun.sun
+    - sensor.temperatur_bad
+    - sensor.fukt_bad
+    - binary_sensor.motion_bad
+    - sensor.temperatur_stue
+    - sensor.fukt_stue
+  lys:
+    name: Lys
+    entities:
+    - light.lys_tv
+    - light.pixelring_strip
+    - input_slider.pixelring_animation_speed
+    - light.oslo
+    - light.orb
+  brytere:
+    name: Brytere
+    entities:
+    - switch.bryter_tv
+  soverom:
+    name: Soverom
+    view: yes
+    entities:
+    - media_player.soverom
+  gjesterom:
+    name: Gjesterom
+    view: yes
+    entities:
+    - group.gjesteromlys
+  gjesteromlys:
+    name: Gjesteromlys
+    entities:
+    - light.tradfri_bulb_gu10_ws_400lm
+    - light.tradfri_bulb_gu10_ws_400lm_2
+    - light.tradfri_bulb_gu10_ws_400lm_3
+  kjkken:
+    name: Kjøkken
+    view: yes
+    entities:
+      - media_player.kjkken
+  stue:
+    name: Stue
+    view: yes
+    entities:
+      - sensor.temperatur_stue
+      - sensor.fukt_stue
+      - sensor.lux_stue
+      - media_player.stue
+      - media_player.lgwebostv
+  bad:
+    name: Bad
+    view: yes
+    entities:
+      - media_player.bad
+      - sensor.temperatur_bad
+      - sensor.fukt_bad
+      - sensor.lux_bad
+      - binary_sensor.motion_bad
+  balkong:
+    name: Balkong
+    view: yes
+    entities:
+      - sensor.temperatur_balkong
+      - sensor.fukt_balkong
+      - sensor.flower_1_battery
+      - sensor.flower_1_conductivity
+      - sensor.flower_1_light_intensity
+      - sensor.flower_1_moisture
+      - sensor.flower_1_temperature
+
